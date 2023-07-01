@@ -2,6 +2,7 @@ import { currencyConverter } from '@/utils/currencyConverter';
 import Image from 'next/image'
 import React from 'react'
 import { AiOutlineStar } from "react-icons/ai";
+import Button from './Button';
 
 
 const CourseItem = ({ course }) => {
@@ -52,7 +53,7 @@ const CourseItem = ({ course }) => {
                     <p className="text-lg font-semibold">
                         {currencyConverter((course.price))}
                     </p>
-                    {/* <Button href={`/courses/${course.id}`} placeholder="View Details" /> */}
+                    <Button href={`/courses/${course.id}`} placeholder="View Details" />
                 </div>
             </div>
         </div>
